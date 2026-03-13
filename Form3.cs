@@ -10,31 +10,39 @@ namespace lab2
 {
     public partial class Form3 : Form
     {
-        public int Kwota { get; set; }
-        public string WybranaPlatnosc { get; private set; }
         public Form3()
         {
             InitializeComponent();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+                Globals.WybranaPlatnosc = "Karta";
+            else if (radioButton2.Checked)
+                Globals.WybranaPlatnosc = "BLIK";
+            else
+                Globals.WybranaPlatnosc = "Gotówka";
+
+            this.Close();
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
 
-        }
+
         /*
-   if (radioKarta.Checked)
-       WybranaPlatnosc = "Karta";
-   else if (radioBlik.Checked)
-       WybranaPlatnosc = "BLIK";
-   else
-       WybranaPlatnosc = "Gotówka";
+if (radioKarta.Checked)
+WybranaPlatnosc = "Karta";
+else if (radioBlik.Checked)
+WybranaPlatnosc = "BLIK";
+else
+WybranaPlatnosc = "Gotówka";
 
-   this.DialogResult = DialogResult.OK;
-   this.Close();*/
+this.DialogResult = DialogResult.OK;
+this.Close();*/
     }
 }

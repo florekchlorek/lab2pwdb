@@ -43,7 +43,6 @@
             listViewKoszyk.Size = new Size(231, 406);
             listViewKoszyk.TabIndex = 0;
             listViewKoszyk.UseCompatibleStateImageBehavior = false;
-            listViewKoszyk.SelectedIndexChanged += listViewKoszyk_SelectedIndexChanged;
             // 
             // button1
             // 
@@ -81,9 +80,9 @@
             label1.Font = new Font("Segoe UI", 11F);
             label1.Location = new Point(377, 59);
             label1.Name = "label1";
-            label1.Size = new Size(55, 25);
+            label1.Size = new Size(59, 25);
             label1.TabIndex = 4;
-            label1.Text = "Cena";
+            label1.Text = "Cena:";
             label1.Click += label1_Click;
             // 
             // Form1

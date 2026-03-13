@@ -14,10 +14,7 @@ namespace lab2
         public Form2()
         {
             InitializeComponent();
-        }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
             listBox1.Items.Add("Pizza");
             listBox1.Items.Add("Ramen");
             listBox1.Items.Add("Sushi");
@@ -34,11 +31,8 @@ namespace lab2
         {
             if (listBox1.SelectedItem != null)
             {
-                if (listBox1.SelectedItem != null)
-                {
-                    Globals.ProduktWybrany = listBox1.SelectedItem.ToString();
-                    this.Close();
-                }
+                Globals.ProduktWybrany = listBox1.SelectedItem.ToString();
+                this.Close();
             }
         }
     }

@@ -7,5 +7,7 @@ namespace lab2
     internal class Globals
     {
         public static string ProduktWybrany = "produkt";
+        public static string WybranaPlatnosc = "";
+        public static string Transport = "";
     }
 }
